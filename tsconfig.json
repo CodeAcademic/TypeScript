@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // JavaScriptning qaysi versiyasini transpilyatsiya qilishni aniqlaydi
+    "module": "commonjs", // CommonJS modullaridan foydalanadi (Node.js uchun)
+    "outDir": "./dist", // Transpilyatsiya qilingan fayllarni saqlash joyi
+    "rootDir": "./src", // Asosiy TypeScript fayllaringizni qayerdan olishni ko'rsatadi
+    "strict": true, // TypeScriptning qattiq yozish qoidalarini yoqadi
+    "esModuleInterop": true, // CommonJS va ES6 modullarini o'zaro ishlashni osonlashtiradi
+    "skipLibCheck": true // Tez transpilyatsiya qilish uchun kutubxona fayllarini tekshirishni o'tkazib yuboradi
+  },
+  "include": ["src/**/*"], // Qaysi fayllar transpilyatsiya qilinishi kerakligini aniqlaydi
+  "exclude": ["node_modules"] // Qaysi fayllar transpilyatsiya qilinmasligini aniqlaydi
+}
